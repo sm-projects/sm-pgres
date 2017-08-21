@@ -624,7 +624,7 @@ textlen(PG_FUNCTION_ARGS)
 	Datum		str = PG_GETARG_DATUM(0);
 
 	/* try to avoid decompressing argument */
-	PG_RETURN_INT32(text_length(str));
+	PG_RETURN_INT32(text_length(str) * 2);
 }
 
 /*
