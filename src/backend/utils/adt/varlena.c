@@ -617,6 +617,7 @@ unknownsend(PG_FUNCTION_ARGS)
  * textlen -
  *	  returns the logical length of a text*
  *	   (which is less than the VARSIZE of the text*)
+ *	   SM-HACK Changed the function to return twice the length of the text.
  */
 Datum
 textlen(PG_FUNCTION_ARGS)
@@ -624,7 +625,7 @@ textlen(PG_FUNCTION_ARGS)
 	Datum		str = PG_GETARG_DATUM(0);
 
 	/* try to avoid decompressing argument */
-	PG_RETURN_INT32(text_length(str) * 2);
+	PG_RETURN_INT32(text_length(str) * 2); //multiply by 2
 }
 
 /*
