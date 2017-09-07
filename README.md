@@ -24,4 +24,4 @@ Hacking Postgres database code in order to learn more
 ### 3. Implementing custom postgress functions
     1. Implement custom function to store tags for meta search function.    
         - createtag(...) //create tags on sql objects which can be row /column
-        - findtag(<tag>) //resturns sqlobjects that match
+        - findtag(<tag>) //returns sqlobjects that match
