@@ -1,6 +1,6 @@
 # sm-pgres
 
-Hacking Postgres database code in order tto learn more 
+Hacking Postgres database code in order to learn more 
 
 ## 1. Build and deploy your own version of postgres database server
 
